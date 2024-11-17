@@ -14,5 +14,9 @@ const hasSpecialPermission = true
 const hasTemporaryPass = false
 
 let isAccess
-
 // your code
+
+const isAccessRole = isAdmin || isVerifiedUser
+const isPermission = hasSpecialPermission || hasTemporaryPass
+
+isAccess = isAccessRole && isPermission
