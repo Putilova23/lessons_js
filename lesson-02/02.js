@@ -20,7 +20,7 @@ if (isWinningDouble) {
 
 
 /*
-console.log('Первый бросок: ' + dice1)
+console.log(Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
 if (isWinningDouble) {
   console.log('Выигрышный дубль!')
