@@ -21,10 +21,11 @@ findCommonElements([1, 2, 3], [2, 3, 4])
 
 function findCommonElements(array1, array2) {
   const uniqueElements = [];
-  for (let i = 0; i < array.length; i++) {
-    if (includesElement(uniqueElements, array[i])) {
-        uniqueElements.push(array[i]);
+  for (let i = 0; i < array1.length; i++) 
+  for (let i = 0; i < array2.length; i++){
+    if (array1[i].includes(array2[i])) {
+        uniqueElements.push(array1[i]);
     }
 }
-return uniqueElements;
+return uniqueElements(i);
 }
