@@ -13,6 +13,15 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
+function fun1 (name) {
+  
+}
+
+const test = [1,2,3]
+
+fun1([1,2,3])
+fun1(test)
+
 function includesElement(array, element) {
   for (let i = 0; i < array.length; i++) {
       if (array[i] === element) {
