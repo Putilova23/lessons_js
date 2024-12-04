@@ -38,5 +38,3 @@ const gallery = {
 function updateGallery(gallery, key, param) {
   gallery[key]= param
 }
-gallery[key] = 20
-console.log(gallery);
