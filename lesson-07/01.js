@@ -6,7 +6,7 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-let names = ["hello", "world", "from", "javascript"];
+let names = ("hello", "world", "from", "javascript")
 
 function capitalizeWords(namesArray) {
 
@@ -21,5 +21,5 @@ function capitalizeWords(namesArray) {
   return newNames
 }
 
-const newNames123 = capitalizeWords (["hello", "world", "from", "javascript"])
+const newNames123 = capitalizeWords ("hello", "world", "from", "javascript")
 console.log (newNames123);
