@@ -6,4 +6,16 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-function capitalizeWords() {}
+let names = ["hello", "world", "from", "javascript"];
+
+let newNames = [];
+
+function capitalizeWords(namesArray) {
+  for ( let i = 0; i < namesArray.length; i++) {
+    let name = namesArray[i];
+    let firstLetter = name.charAt(0).toUpperCase();
+    newNames.push(firstLetter + name.slice(1))
+  }
+}
+capitalizeWords (["hello", "world", "from", "javascript"])
+console.log (newNames);
