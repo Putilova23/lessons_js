@@ -8,14 +8,18 @@
 
 let names = ["hello", "world", "from", "javascript"];
 
-let newNames = [];
-
 function capitalizeWords(namesArray) {
+
+  let newNames = [];
+
   for ( let i = 0; i < namesArray.length; i++) {
     let name = namesArray[i];
     let firstLetter = name.charAt(0).toUpperCase();
     newNames.push(firstLetter + name.slice(1))
   }
+
+  return newNames
 }
-capitalizeWords (["hello", "world", "from", "javascript"])
-console.log (newNames);
+
+const newNames123 = capitalizeWords (["hello", "world", "from", "javascript"])
+console.log (newNames123);
