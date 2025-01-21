@@ -3,7 +3,17 @@
  * Если строка является числом, функция должна возвращать true, в противном случае - false.
  */
 
+
 function isNumeric(str) {
+  function isNumeric(str) {
+    if (str === null || typeof str !== 'string') {
+        return false;
+    }
+    if (str.length === 0) {
+        return false;
+    }
+    return !isNaN(str) && !isNaN(parseFloat(str));
+}
   // your code
 }
 
