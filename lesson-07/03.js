@@ -10,5 +10,12 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  if(str.length > maxLength) {
+    return str.slice(0,maxLength) + "..."
+  }
+  
+  return str
 }
+
+console.log(truncate("привет, я Дима", 20));
+
