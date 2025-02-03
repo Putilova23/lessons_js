@@ -45,6 +45,15 @@ for (let i = 0; i < PETS.length; i++) {
   petButtonElement.id = pet.id
   petButtonElement.textContent = pet.title
 
+  petButtonElement.addEventListener("click", function() {
+    messageBox.textContent = ""
+    if (cart.length > 2) {
+      return messageBox.textContent = "Вы не можете добавить более 3 питомцев"
+    }
+    cart.push(pet.id)
+    updateCartDisplay()
+  })
+
   petShop.append(petButtonElement)
 }
 
@@ -67,4 +76,13 @@ clearCartButton.addEventListener('click', function () {
   updateCartDisplay()
 })
 
-// Твой код:
+//   form.addEventListener('submit', function (event) {
+//   event.preventDefault() // добавляем вызов метода preventDefault
+ 
+//   const input = document.querySelector('.input')
+//   const text = input.value
+//   input.value = ''
+//   const list = document.querySelector('.list')
+ 
+//   list.innerHTML += `<li class="item">${text}</li>`
+// })
