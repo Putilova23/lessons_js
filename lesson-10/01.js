@@ -21,6 +21,8 @@
   - метод должен отобразить сообщение "Фильм успешно удалён!" в message-box
 */
 
+//принимает id фильма
+
 const model = {
   movies: [],
   addMovie(title, description) {
